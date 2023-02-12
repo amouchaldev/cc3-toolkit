@@ -25,7 +25,7 @@ const stagiaireSlice = createSlice({
     SET_TO_UPDATE: (state, action) => {
       return {
         ...state,
-        updating: state.stagiaires.find(stg => stg.id != action.payload),
+        updating: state.stagiaires.find(stg => stg.id == action.payload),
       };
     },
     UPDATE_STAGIAIRE: (state, action) => {
